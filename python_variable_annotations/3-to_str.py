@@ -16,7 +16,8 @@ def to_str(n: float) -> str:
         n (float): The float number to convert.
 
     Returns:
-        str: The string representation of the float."""
+        str: The string representation of the float.
+    """
 
 
     return str(n)
