@@ -4,11 +4,12 @@
 Run wait_random n times concurrently and return the delays in ascending order.
 """
 
+from typing import List
 import asyncio
 wait_random = __import__('0-basic_async_syntax').wait_random
 
 
-async def wait_n(n: int, max_delay: int):
+async def wait_n(n: int, max_delay: int) -> list[float]:
     """
     Execute wait_random n times with the specified max_delay.
     The result list is returned in ascending order without using sort().

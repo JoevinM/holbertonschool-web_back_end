@@ -4,11 +4,12 @@
 Run task_wait_random n times and return the delays in ascending order.
 """
 
+from typing import List
 import asyncio
 task_wait_random = __import__('3-tasks').task_wait_random
 
 
-async def task_wait_n(n: int, max_delay: int):
+async def task_wait_n(n: int, max_delay: int) -> List[float]:
     """
     Spawn task_wait_random n times with the given max_delay.
     Collect and return all delays in ascending order.
