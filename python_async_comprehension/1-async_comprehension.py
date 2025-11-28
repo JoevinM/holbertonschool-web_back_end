@@ -1,4 +1,4 @@
-#!/bin/user/python3
+#!/usr/bin/env python3
 
 """
 This module defines a coroutine that collects 10 random numbers
