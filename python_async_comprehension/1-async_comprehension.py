@@ -6,7 +6,7 @@ from an asynchronous generator using async comprehension.
 """
 
 from typing import List
-import asyncio
+from asyncio import Task
 async_generator = __import__('0-async_generator').async_generator
 
 
