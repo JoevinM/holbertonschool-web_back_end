@@ -1,5 +1,13 @@
 #!/usr/bin/env python3
 
+"""
+Return a dictionary containing hypermedia pagination information for
+the requested page. The method validates input values, retrieves the
+appropriate page of the dataset using get_page, and computes useful
+metadata such as total pages, next page, and previous page to support
+hypermedia-driven pagination.
+"""
+
 import csv
 import math
 from typing import List
