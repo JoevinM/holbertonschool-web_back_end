@@ -1,0 +1,2 @@
+// This script create or use a DB name my_db in MangoDB
+use my_db
