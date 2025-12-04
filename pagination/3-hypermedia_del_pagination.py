@@ -40,6 +40,24 @@ class Server:
         return self.__indexed_dataset
 
     def get_hyper_index(self, index: int = None, page_size: int = 10) -> Dict:
+        """
+        Return a dictionary with hypermedia pagination information.
+
+        This method retrieves a page of data starting from a given index,
+        skipping
+        missing entries if the dataset has been altered (deletion resilience).
+
+        Args:
+            index (int): Starting index for pagination. Must be valid.
+            page_size (int): Number of items to return.
+
+        Returns:
+            Dict[str, Any]: A dictionary containing:
+                - index: the starting index
+                - next_index: the index to use for the next page
+                - page_size: number of items actually returned
+                - data: the list of returned dataset entries
+        """
         assert index is not None
         assert 0 <= index < len(self.indexed_dataset())
 
