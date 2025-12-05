@@ -2,7 +2,6 @@
 """
 Module that provides a function to list all documents in a MongoDB collection.
 """
-from pymongo import MongoClient
 
 
 def list_all(mongo_collection):
@@ -17,4 +16,5 @@ def list_all(mongo_collection):
         List of documents (empty list if no document exists)
     """
 
-    return list(mongo_collection.find())
+    document = list(mongo_collection.find())
+    return document
