@@ -1,3 +1,8 @@
 *312.pyc
 NoSQL/.gitignore
 .gitignore
+node_modules
+ES6_basic/node_modules/.package-lock.json
+ES6_basic/.eslintrc.js
+ES6_basic/babel.config.js
+.gitignore
