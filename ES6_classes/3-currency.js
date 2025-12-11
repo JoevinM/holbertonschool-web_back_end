@@ -1,3 +1,5 @@
+// define a class name Currency
+
 export default class Currency{
 	constructor(code, name){
 	this.code = code;
