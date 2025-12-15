@@ -76,6 +76,7 @@ Read or watch:
 ---
 
 ## Tasks Summary
+
 | #  | Task Name               | Description                                | File                          |
 | -- | ----------------------- | ------------------------------------------ | ----------------------------- |
 | 0  | Const or let?           | Use `const` and `let` correctly            | `0-constants.js`              |
