@@ -26,6 +26,7 @@ function countStudents(path) {
 
 		if (!fields[field]) {
 			fields[field] = [];
+			fieldOrder.push(field);
 		}
 		fields[field].push(firstname);
 	}
